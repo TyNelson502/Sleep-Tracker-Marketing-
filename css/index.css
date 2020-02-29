@@ -135,3 +135,11 @@ body {
   height: 100%;
 }
 /*reset end*/
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
