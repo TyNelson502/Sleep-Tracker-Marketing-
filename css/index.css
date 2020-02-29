@@ -143,3 +143,74 @@ body {
   text-decoration: none;
   color: black;
 }
+.sleeping-ad {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/girl-checking-phone.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sleeping-ad .section-container {
+  opacity: 0.7;
+  background: black;
+  width: 50%;
+  height: 30%;
+  border-radius: 1%;
+}
+.sleeping-ad .section-container .better-sleep {
+  color: white;
+  text-align: center;
+}
+.sleeping-ad .section-container .better-sleep h1 {
+  font-size: 3em;
+  margin: 20px;
+}
+.sleeping-ad .section-container .better-sleep p {
+  font-size: 2em;
+}
+.app-store {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.app-store .android-app a > img {
+  height: 50px;
+  flex: 1;
+  margin-right: 20px;
+}
+.app-store .apple-app a > img {
+  height: 50px;
+  flex: 1;
+}
+.form-action {
+  text-align: center;
+}
+.form-action input {
+  height: 50px;
+  padding: 15px;
+  margin: 10px;
+}
+.form-action .button {
+  display: inline-block;
+  background-color: navy;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+}
+.form-action .button:hover {
+  background: purple;
+  color: white;
+}
