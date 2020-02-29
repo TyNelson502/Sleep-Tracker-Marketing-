@@ -135,11 +135,45 @@ body {
   height: 100%;
 }
 /*reset end*/
+* {
+  box-sizing: border-box;
+  background-color: #24252A;
+  color: white;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Oxanium', sans-serif;
+}
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.navigation .logo {
+  width: 25rem;
+  cursor: pointer;
+}
+.navigation li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.navigation li a {
+  transition: all 0.3s ease 0s;
 }
 .navigation a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+.navigation a button {
+  padding: 9px 25px;
+  background-color: #4c0099;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
