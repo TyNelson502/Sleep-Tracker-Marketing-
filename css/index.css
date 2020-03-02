@@ -258,12 +258,18 @@ a button:hover {
   color: white;
 }
 footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-size: 1rem;
-  margin: 5px 0;
+  margin: 7px;
 }
 footer a:hover {
   color: #9600f5;
   transition: all 0.3s ease 0s;
+}
+footer h3 {
+  font-size: 2rem;
 }
 .aboutus {
   display: flex;
