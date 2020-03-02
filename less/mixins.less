@@ -1,6 +1,6 @@
-//mixing for button
+//mixin for button
 
-.button(@bg-color: navy, @width:200px, @font-color: white){
+.custombutton(@bg-color: navy, @width:200px, @font-color: white){
     display: inline-block;
     background-color: @bg-color;
     cursor: pointer;
@@ -16,4 +16,8 @@
         background: purple;
         color: white;
     } // a: hover 
+}
+.flexcenter(@flex: flex, @center: center){
+    display: @flex;
+    justify-content: @center;
 }
