@@ -387,9 +387,12 @@ footer h3 {
   justify-content: center;
   text-align: center;
 }
-.previous-version li {
+li {
   font-size: 1.5rem;
   line-height: 25px;
+}
+li a {
+  transition: all 0.3s ease 0s;
 }
 .bugheader {
   font-size: 2rem;
