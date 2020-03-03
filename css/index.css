@@ -387,9 +387,12 @@ footer h3 {
   justify-content: center;
   text-align: center;
 }
-.previous-version li {
+li {
   font-size: 1.5rem;
   line-height: 25px;
+}
+li a {
+  transition: all 0.3s ease 0s;
 }
 .bugheader {
   font-size: 2rem;
@@ -446,4 +449,9 @@ footer h3 {
   border: 3px solid;
   border-color: #9600f5;
   background-color: #4c0099;
+}
+hr {
+  border: 3px solid;
+  border-color: #4c0099;
+  margin: 30px 0;
 }
