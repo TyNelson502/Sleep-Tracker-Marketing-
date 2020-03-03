@@ -149,29 +149,56 @@ html,
 body {
   font-family: 'Oxanium', sans-serif;
 }
-.navigation {
+.whole-container {
+  width: 100%;
+  background: #0c0101;
+}
+.whole-container header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: black;
+  box-shadow: 0px 8px 60px -5px purple;
+  opacity: 0.8;
+}
+.whole-container .navigation {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
 }
-.navigation .logo {
+.whole-container .navigation .logo {
   width: 25rem;
   cursor: pointer;
 }
-.navigation li {
+.whole-container .navigation li {
   display: inline-block;
   padding: 0 20px;
 }
-.navigation li a {
+.whole-container .navigation li a {
   transition: all 0.3s ease 0s;
+  font-size: 1.5em;
 }
-.navigation a {
+.whole-container .navigation a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
-.navigation a button {
+.whole-container .navigation a button {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
   padding: 9px 25px;
   background-color: #4c0099;
   border: none;
@@ -179,18 +206,21 @@ body {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-li a:hover {
+.whole-container .navigation a button:hover {
+  background: purple;
+  color: white;
+}
+.whole-container li a:hover {
   color: #9600f5;
 }
-a button:hover {
+.whole-container a button:hover {
   background-color: white;
   color: #9600f5;
 }
-.sleeping-ad {
-  margin: 0;
+.whole-container .sleeping-ad {
   width: 100%;
   height: 100vh;
-  background-image: url('/img/girl-sleep.jpg');
+  background-image: url('/img/night-sleep.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -199,77 +229,119 @@ a button:hover {
   justify-content: center;
   align-items: center;
 }
-.sleeping-ad .section-container {
-  opacity: 0.7;
+.whole-container .sleeping-ad .section-container {
+  opacity: 0.6;
   background: black;
-  width: 50%;
-  height: 30%;
-  border-radius: 1%;
+  width: 30%;
+  height: 55%;
+  border-radius: 100%;
 }
-.sleeping-ad .section-container .better-sleep {
+.whole-container .sleeping-ad .section-container .better-sleep {
   color: white;
   text-align: center;
+  margin-top: 30%;
 }
-.sleeping-ad .section-container .better-sleep h1 {
-  font-size: 3em;
+.whole-container .sleeping-ad .section-container .better-sleep h1 {
+  font-size: 4em;
   margin: 20px;
+  color: #9600f5;
 }
-.sleeping-ad .section-container .better-sleep p {
-  font-size: 2em;
+.whole-container .sleeping-ad .section-container .better-sleep p {
+  font-size: 2.5em;
+  padding: 20px 0;
+  color: greenyellow;
 }
-.app-store {
+.whole-container .app-store {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
 }
-.app-store .android-app a > img {
+.whole-container .app-store .android-app a > img {
   height: 50px;
   flex: 1;
   margin-right: 20px;
 }
-.app-store .apple-app a > img {
+.whole-container .app-store .apple-app a > img {
   height: 50px;
   flex: 1;
 }
-.form-action {
+.whole-container .form-action {
   text-align: center;
 }
-.form-action input {
+.whole-container .form-action input {
   height: 50px;
   padding: 15px;
   margin: 10px;
 }
-.form-action .button {
+.whole-container .form-action .button {
   display: inline-block;
-  background-color: navy;
+  background-color: #4c0099;
   cursor: pointer;
   width: 200px;
   height: 60px;
-  font-size: 1.2em;
+  font-size: 2em;
   border-radius: 10px;
   color: white;
   text-align: center;
   line-height: 10px;
 }
-.form-action .button:hover {
+.whole-container .form-action .button:hover {
   background: purple;
   color: white;
 }
-footer {
+.whole-container .page-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  background: black;
+  padding: 0;
+}
+.whole-container .page-content .about-sleep {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  opacity: 0.6;
+}
+.whole-container .page-content .about-sleep h2 {
+  color: black;
+  font-size: 4em;
+  padding: 20px;
+  color: #9600f5;
+}
+.whole-container .page-content .about-sleep p {
+  font-size: 2em;
+  color: white;
+  padding: 30px;
+  text-align: justify;
+}
+.whole-container .page-content .about-image {
+  width: 50%;
+}
+.whole-container .page-content .about-image img {
+  width: 100%;
+}
+.whole-container footer {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
-  font-size: 1rem;
-  margin: 7px;
+  font-size: 2rem;
+  background: black;
+  padding: 20px;
+  box-shadow: 10px -30px 40px -35px purple;
 }
-footer a:hover {
+.whole-container footer a:hover {
   color: #9600f5;
   transition: all 0.3s ease 0s;
 }
-footer h3 {
-  font-size: 2rem;
+.whole-container footer h3 {
+  font-size: 3.5rem;
+  color: #9600f5;
 }
 .aboutus {
   display: flex;
