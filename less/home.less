@@ -172,10 +172,27 @@ a{
            width: 100%;
        }
    }
-}// ^^^ end of page content ^^^
-
-
-
+   .middle-background-image { // middle image between section content
+    width: 100%;
+    height: 45vh;
+    background-image: url('/img/night-middle-image.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        width: 100%;
+        margin: 0;
+        text-align: right;
+        font-size: 4em;
+        color: yellowgreen;
+    }
+   }
+}
+// ^^^ end of page content ^^^
 
 
 footer{
@@ -186,7 +203,7 @@ footer{
     font-size: @headersize1;
     background: black;
     padding: 20px;
-    box-shadow: 10px -30px 40px -35px purple;
+    box-shadow: 10px -30px 60px -35px purple;
     a:hover{
         color: @lightpurple;
         transition: all 0.3s ease 0s;
