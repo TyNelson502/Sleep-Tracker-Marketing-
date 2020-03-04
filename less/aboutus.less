@@ -1,7 +1,69 @@
+
+header {  // header for the nav at 100%
+    width: 100%; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background: black;
+    box-shadow: 0px 8px 60px -5px purple;
+    opacity: 0.8;
+.navigation{ // Nav at 80%
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    .logo{
+        width: 25rem;
+        cursor: pointer;
+    }
+    li{
+        display: inline-block;
+        padding: 0 20px;
+        a{
+            transition: all 0.3s ease 0s; //this is for animation hover
+            font-size: 1.5em;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        button{
+            .custombutton(); 
+            padding: 9px 25px;
+            background-color:rgba(76,0,153,1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer; 
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+            li{
+                a:hover{
+                    color:rgba(150,0,245,1);
+                }
+            }
+            a{
+                button:hover{
+                    background-color: white;
+                    color: rgba(150,0,245,1);
+                }
+            }
+    } // nav
+} // header
+
+
+// about us section 
 .aboutus{
     display: flex;
     justify-content: center;
     font-size: @headersize4;
+    margin-top: 200px;
     h1{
         border-radius: 50px;
         background-color: @darkpurple;
@@ -16,8 +78,9 @@
     margin: 0 auto;
     hr{
         border: 3px solid;
-        border-color: @darkpurple;
-        margin: 30px 0;
+        border-color: limegreen;
+        margin: 20px auto;
+        opacity: 0.4;
 }
     }
 .leftdev{
@@ -40,6 +103,7 @@
         text-align: center;
             padding-bottom: 20px;
             background: @darkpurple;
+            color: limegreen;
     }
 }
     .img-container-left{
@@ -70,6 +134,7 @@
             text-align: center;
             padding-bottom: 20px;
             background: @darkpurple;
+            color: limegreen;
         }
     }
 .img-container-right{
@@ -81,3 +146,22 @@
     }
 }
     }
+
+    footer{ // footer section 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: @headersize1;
+    background: black;
+    padding: 20px;
+    box-shadow: 10px -20px 60px -35px purple;
+    a:hover{
+        color: @lightpurple;
+        transition: all 0.3s ease 0s;
+    }
+    h3{
+        font-size: @headersize3;
+        color: @lightpurple;
+    }
+}
