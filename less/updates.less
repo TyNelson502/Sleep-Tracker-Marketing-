@@ -1,5 +1,5 @@
 .updatebody{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 .header{
@@ -12,12 +12,17 @@
     width: 35rem;
     text-align: center;
     margin: 30px auto;
+    margin-top: 200px;
     }
 .version-header{
     .flexcenter();
     font-size: 2.5rem;
     text-decoration: underline;
-    margin: 0 25px;
+    margin: 0 auto;
+    width: 80%;
+}
+h2 {
+    color: limegreen;
 }
 .prvupd{
     .flexcenter();
@@ -33,6 +38,7 @@
         line-height: 25px;
         a{
             transition: all 0.3s ease 0s;
+            color: rgb(247, 4, 4);
         }
 }
 .bugheader{
@@ -46,7 +52,7 @@
     align-items: center;
     label{
         margin: 1.5rem 0;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .emailinput{
         width: 15%;
@@ -56,9 +62,8 @@
         padding: 7.5rem 15%;
     }
     .submitbtn{
-        width: 10%;
-        margin: 1.5rem 0;
-        background-color: @darkpurple;
+        .custombutton();
+        margin: 40px;
     }
 }
 .upcoming{
@@ -68,6 +73,8 @@
     padding: 15px 0;
     border-radius: 30px;
     background-color: @darkpurple;
+    width: 43%;
+    margin: 0 auto;
     h2{
         font-size: @headersize3;
         background-color: @darkpurple;
@@ -80,6 +87,9 @@
 .features{
     display: flex;
     justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
     p{
         margin: 7px 0;;
         font-size: 1.5rem;
@@ -93,4 +103,29 @@
 hr{
     border: 3px solid;
     border-color: @darkpurple;
-    margin: 30px 0; }
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+
+
+    footer{ // footer section 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: @headersize1;
+        background: black;
+        box-shadow: 10px -30px 60px -35px purple;
+        margin-top: 175px;
+        a:hover{
+            color: @lightpurple;
+            transition: all 0.3s ease 0s;
+        }
+        h3{
+            font-size: @headersize3;
+            color: @lightpurple;
+        }
+    }   

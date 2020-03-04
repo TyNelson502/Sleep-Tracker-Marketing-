@@ -353,6 +353,7 @@ body {
   background: black;
   padding: 20px;
   box-shadow: 10px -30px 60px -35px purple;
+  line-height: 2em;
 }
 .whole-container footer a:hover {
   color: #9600f5;
@@ -362,10 +363,74 @@ body {
   font-size: 3.5rem;
   color: #9600f5;
 }
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: black;
+  box-shadow: 0px 8px 60px -5px purple;
+  opacity: 0.8;
+}
+header .navigation {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+header .navigation .logo {
+  width: 25rem;
+  cursor: pointer;
+}
+header .navigation li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .navigation li a {
+  transition: all 0.3s ease 0s;
+  font-size: 1.5em;
+}
+header .navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+header .navigation a button {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  padding: 9px 25px;
+  background-color: #4c0099;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+header .navigation a button:hover {
+  background: purple;
+  color: white;
+}
+header .navigation li a:hover {
+  color: #9600f5;
+}
+header .navigation a button:hover {
+  background-color: white;
+  color: #9600f5;
+}
 .aboutus {
   display: flex;
   justify-content: center;
   font-size: 5rem;
+  margin-top: 200px;
 }
 .aboutus h1 {
   border-radius: 50px;
@@ -381,8 +446,9 @@ body {
 }
 .about-content hr {
   border: 3px solid;
-  border-color: #4c0099;
-  margin: 30px 0;
+  border-color: limegreen;
+  margin: 20px auto;
+  opacity: 0.4;
 }
 .leftdev {
   border-radius: 30px;
@@ -406,6 +472,7 @@ body {
   text-align: center;
   padding-bottom: 20px;
   background: #4c0099;
+  color: limegreen;
 }
 .leftdev .img-container-left {
   width: 45%;
@@ -436,6 +503,7 @@ body {
   text-align: center;
   padding-bottom: 20px;
   background: #4c0099;
+  color: limegreen;
 }
 .rightdev .img-container-right {
   width: 45%;
@@ -445,8 +513,224 @@ body {
 .rightdev .img-container-right img {
   height: 250px;
 }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+  background: black;
+  padding: 20px;
+  box-shadow: 10px -20px 60px -35px purple;
+}
+footer a:hover {
+  color: #9600f5;
+  transition: all 0.3s ease 0s;
+}
+footer h3 {
+  font-size: 3.5rem;
+  color: #9600f5;
+}
+.findoutmore-1 {
+  width: 100%;
+  background: white;
+}
+.findoutmore-1 header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: black;
+  box-shadow: 0px 8px 60px -5px purple;
+  opacity: 0.8;
+}
+.findoutmore-1 .navigation {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.findoutmore-1 .navigation .logo {
+  width: 25rem;
+  cursor: pointer;
+}
+.findoutmore-1 .navigation li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.findoutmore-1 .navigation li a {
+  transition: all 0.3s ease 0s;
+  font-size: 1.5em;
+}
+.findoutmore-1 .navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.findoutmore-1 .navigation a button {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  padding: 9px 25px;
+  background-color: #4c0099;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.findoutmore-1 .navigation a button:hover {
+  background: purple;
+  color: white;
+}
+.findoutmore-1 li a:hover {
+  color: #9600f5;
+}
+.findoutmore-1 a button:hover {
+  background-color: white;
+  color: #9600f5;
+}
+.findoutmore-1 .sleeping-phone {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/findmore-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.findoutmore-1 .sleeping-phone .section-phone {
+  width: 30%;
+  height: 55%;
+}
+.findoutmore-1 .sleeping-phone .section-phone .worlds-best {
+  color: white;
+  text-align: center;
+  margin-top: 30%;
+}
+.findoutmore-1 .sleeping-phone .section-phone .worlds-best h1 {
+  font-size: 5em;
+  margin: 20px;
+  color: white;
+}
+.findoutmore-1 .sleeping-phone .section-phone .worlds-best p {
+  font-size: 2.9em;
+  padding: 20px 0;
+  color: greenyellow;
+}
+.findoutmore-1 .app-store {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.findoutmore-1 .app-store .android-app a > img {
+  height: 50px;
+  flex: 1;
+  margin-right: 20px;
+}
+.findoutmore-1 .app-store .apple-app a > img {
+  height: 50px;
+  flex: 1;
+}
+.findoutmore-1 .page-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  padding: 0;
+}
+.findoutmore-1 .page-content .about-sleep {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  opacity: 0.6;
+}
+.findoutmore-1 .page-content .about-sleep h2 {
+  color: black;
+  font-size: 5em;
+  padding: 20px;
+  color: #9600f5;
+}
+.findoutmore-1 .page-content .about-sleep p {
+  font-size: 3em;
+  color: black;
+  padding: 30px;
+  text-align: justify;
+}
+.findoutmore-1 .page-content .about-image {
+  width: 50%;
+}
+.findoutmore-1 .page-content .about-image img {
+  width: 100%;
+}
+.findoutmore-1 .page-content .middle-background-image {
+  width: 100%;
+  height: 45vh;
+  background-image: url('/img/night-middle-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.findoutmore-1 .page-content .middle-background-image h2 {
+  width: 100%;
+  margin: 0;
+  text-align: right;
+  font-size: 4em;
+  color: yellowgreen;
+}
+.findoutmore-1 .have-good-night {
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+.findoutmore-1 .sleep-more {
+  font-size: 2em;
+  text-align: center;
+  color: #9600f5;
+}
+.findoutmore-1 footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+  background: black;
+  padding: 20px;
+  box-shadow: 10px -30px 60px -35px purple;
+  line-height: 2em;
+}
+.findoutmore-1 footer a:hover {
+  color: #9600f5;
+  transition: all 0.3s ease 0s;
+}
+.findoutmore-1 footer h3 {
+  font-size: 3.5rem;
+  color: #9600f5;
+}
 .updatebody {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 .header {
@@ -459,13 +743,18 @@ body {
   width: 35rem;
   text-align: center;
   margin: 30px auto;
+  margin-top: 200px;
 }
 .version-header {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
   text-decoration: underline;
-  margin: 0 25px;
+  margin: 0 auto;
+  width: 80%;
+}
+h2 {
+  color: limegreen;
 }
 .prvupd {
   display: flex;
@@ -484,6 +773,7 @@ li {
 }
 li a {
   transition: all 0.3s ease 0s;
+  color: #f70404;
 }
 .bugheader {
   font-size: 2rem;
@@ -498,7 +788,7 @@ li a {
 }
 .bugreport label {
   margin: 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 .bugreport .emailinput {
   width: 15%;
@@ -508,9 +798,21 @@ li a {
   padding: 7.5rem 15%;
 }
 .bugreport .submitbtn {
-  width: 10%;
-  margin: 1.5rem 0;
+  display: inline-block;
   background-color: #4c0099;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  margin: 40px;
+}
+.bugreport .submitbtn:hover {
+  background: purple;
+  color: white;
 }
 .upcoming {
   display: flex;
@@ -519,6 +821,8 @@ li a {
   padding: 15px 0;
   border-radius: 30px;
   background-color: #4c0099;
+  width: 43%;
+  margin: 0 auto;
 }
 .upcoming h2 {
   font-size: 3.5rem;
@@ -531,6 +835,9 @@ li a {
 .features {
   display: flex;
   justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .features p {
   margin: 7px 0;
@@ -544,5 +851,25 @@ li a {
 hr {
   border: 3px solid;
   border-color: #4c0099;
-  margin: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+  background: black;
+  box-shadow: 10px -30px 60px -35px purple;
+  margin-top: 175px;
+}
+footer a:hover {
+  color: #9600f5;
+  transition: all 0.3s ease 0s;
+}
+footer h3 {
+  font-size: 3.5rem;
+  color: #9600f5;
 }
