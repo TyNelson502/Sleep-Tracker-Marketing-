@@ -13,6 +13,9 @@
     text-align: center;
     margin: 30px auto;
     margin-top: 200px;
+    @media @tablet { // TABLET MEDIA PUSH UPDATES BUTTON DOWN
+        margin-top: 300px;
+    }
     }
 .version-header{
     .flexcenter();
@@ -41,6 +44,7 @@ h2 {
             color: rgb(247, 4, 4);
         }
 }
+
 .bugheader{
     font-size: 2rem;
     .flexcenter();
@@ -56,10 +60,16 @@ h2 {
     }
     .emailinput{
         width: 15%;
+        @media @tablet { // TABLET MEDIA SET BIGGER WIDTH ON EMAIL INPUT
+            width: 50%;
+        }
     }
     .bugdescription{
         width: 20%;
         padding: 7.5rem 15%;
+        @media @tablet { // TABLET MEDIA SET BIGGER WIDTH ON INPUT BOX
+            width: 50%;
+        }
     }
     .submitbtn{
         .custombutton();
@@ -75,13 +85,24 @@ h2 {
     background-color: @darkpurple;
     width: 43%;
     margin: 0 auto;
+    @media @tablet { // TABLET MEDIA QUERY WIDTH OF CONTENT BOX
+        width: 70%;
+    }
     h2{
         font-size: @headersize3;
         background-color: @darkpurple;
+        @media @tablet { // TABLET MEDIA QUERY FONT SIZE 
+            font-size: 3em;
+        }
     }
     p{
         font-size: @headersize1;
         background-color: @darkpurple; 
+        @media @tablet { // TABLET MEDIA QUERY UPCOMING FEAUTURES
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px 10px;
+        }
     }
 }
 .features{
@@ -90,6 +111,10 @@ h2 {
     width: 50%;
     margin: 0 auto;
     margin-top: 30px;
+    @media @tablet { // TABLET MEDIA ADD SAME WIDTH TO TWIN BOXES
+        width: 80%;
+        margin-top: 50px;
+    }
     p{
         margin: 7px 0;;
         font-size: 1.5rem;
@@ -120,6 +145,9 @@ hr{
         background: black;
         box-shadow: 10px -30px 60px -35px purple;
         margin-top: 175px;
+        @media @tablet { // TABLET MEDIA REMOVE EMPTY SPACE BETWEEN HR AND FOOTER 
+            margin: 0;
+        }
         a:hover{
             color: @lightpurple;
             transition: all 0.3s ease 0s;
