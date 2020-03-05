@@ -165,6 +165,11 @@ body {
   box-shadow: 0px 8px 60px -5px purple;
   opacity: 0.8;
 }
+@media (max-width: 700px) {
+  .whole-container header {
+    margin: 0;
+  }
+}
 .whole-container .navigation {
   width: 80%;
   margin: 0 auto;
@@ -173,6 +178,12 @@ body {
   align-items: center;
   padding: 30px 10%;
 }
+@media (max-width: 700px) {
+  .whole-container .navigation {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .whole-container .navigation .logo {
   width: 25rem;
   cursor: pointer;
@@ -180,6 +191,12 @@ body {
 .whole-container .navigation li {
   display: inline-block;
   padding: 0 20px;
+}
+@media (max-width: 700px) {
+  .whole-container .navigation li {
+    padding: 5px 15px;
+    margin: 10px 0;
+  }
 }
 .whole-container .navigation li a {
   transition: all 0.3s ease 0s;
@@ -235,6 +252,13 @@ body {
   width: 30%;
   height: 55%;
   border-radius: 100%;
+}
+@media (max-width: 700px) {
+  .whole-container .sleeping-ad .section-container {
+    border-radius: 0;
+    width: 80%;
+    height: auto;
+  }
 }
 .whole-container .sleeping-ad .section-container .better-sleep {
   color: white;
@@ -298,6 +322,11 @@ body {
   background: black;
   padding: 0;
 }
+@media (max-width: 700px) {
+  .whole-container .page-content {
+    flex-direction: column;
+  }
+}
 .whole-container .page-content .about-sleep {
   width: 50%;
   display: flex;
@@ -307,11 +336,21 @@ body {
   margin: 0;
   opacity: 0.6;
 }
+@media (max-width: 700px) {
+  .whole-container .page-content .about-sleep {
+    width: 100%;
+  }
+}
 .whole-container .page-content .about-sleep h2 {
   color: black;
   font-size: 4em;
   padding: 20px;
   color: #9600f5;
+}
+@media (max-width: 700px) {
+  .whole-container .page-content .about-sleep h2 {
+    font-size: 3em;
+  }
 }
 .whole-container .page-content .about-sleep p {
   font-size: 2em;
@@ -319,8 +358,18 @@ body {
   padding: 30px;
   text-align: justify;
 }
+@media (max-width: 700px) {
+  .whole-container .page-content .about-sleep p {
+    font-size: 1.9em;
+  }
+}
 .whole-container .page-content .about-image {
   width: 50%;
+}
+@media (max-width: 700px) {
+  .whole-container .page-content .about-image {
+    width: 100%;
+  }
 }
 .whole-container .page-content .about-image img {
   width: 100%;
@@ -336,6 +385,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .whole-container .page-content .middle-background-image h2 {
   width: 100%;
@@ -343,6 +393,15 @@ body {
   text-align: right;
   font-size: 4em;
   color: yellowgreen;
+}
+@media (max-width: 700px) {
+  .whole-container .page-content .middle-background-image h2 {
+    font-size: 3em;
+    position: absolute;
+    top: 80px;
+    width: 50%;
+    text-align: center;
+  }
 }
 .whole-container footer {
   display: flex;
@@ -354,6 +413,7 @@ body {
   padding: 20px;
   box-shadow: 10px -30px 60px -35px purple;
   line-height: 2em;
+  margin: 0;
 }
 .whole-container footer a:hover {
   color: #9600f5;
@@ -374,6 +434,11 @@ header {
   box-shadow: 0px 8px 60px -5px purple;
   opacity: 0.8;
 }
+@media (max-width: 700px) {
+  header {
+    margin: 0;
+  }
+}
 header .navigation {
   width: 80%;
   margin: 0 auto;
@@ -382,6 +447,12 @@ header .navigation {
   align-items: center;
   padding: 30px 10%;
 }
+@media (max-width: 700px) {
+  header .navigation {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 header .navigation .logo {
   width: 25rem;
   cursor: pointer;
@@ -389,6 +460,12 @@ header .navigation .logo {
 header .navigation li {
   display: inline-block;
   padding: 0 20px;
+}
+@media (max-width: 700px) {
+  header .navigation li {
+    padding: 5px 15px;
+    margin: 10px 0;
+  }
 }
 header .navigation li a {
   transition: all 0.3s ease 0s;
@@ -432,6 +509,11 @@ header .navigation a button:hover {
   font-size: 5rem;
   margin-top: 200px;
 }
+@media (max-width: 700px) {
+  .aboutus {
+    margin-top: 300px;
+  }
+}
 .aboutus h1 {
   border-radius: 50px;
   background-color: #4c0099;
@@ -467,6 +549,11 @@ header .navigation a button:hover {
   background: #4c0099;
   text-align: justify;
 }
+@media (max-width: 700px) {
+  .leftdev .about-text p {
+    font-size: 1.5em;
+  }
+}
 .leftdev .about-text h2 {
   font-size: 3rem;
   text-align: center;
@@ -478,6 +565,12 @@ header .navigation a button:hover {
   width: 45%;
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 700px) {
+  .leftdev .img-container-left {
+    width: 50%;
+    align-items: center;
+  }
 }
 .leftdev .img-container-left img {
   height: 250px;
@@ -498,6 +591,11 @@ header .navigation a button:hover {
   background: #4c0099;
   text-align: justify;
 }
+@media (max-width: 700px) {
+  .rightdev .about-text p {
+    font-size: 1.5em;
+  }
+}
 .rightdev .about-text h2 {
   font-size: 3rem;
   text-align: center;
@@ -510,6 +608,12 @@ header .navigation a button:hover {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 700px) {
+  .rightdev .img-container-right {
+    width: 50%;
+    align-items: center;
+  }
+}
 .rightdev .img-container-right img {
   height: 250px;
 }
@@ -521,7 +625,9 @@ footer {
   font-size: 2rem;
   background: black;
   padding: 20px;
-  box-shadow: 10px -20px 60px -35px purple;
+  box-shadow: 10px -30px 60px -35px purple;
+  line-height: 2em;
+  margin: 0;
 }
 footer a:hover {
   color: #9600f5;
@@ -547,6 +653,11 @@ footer h3 {
   box-shadow: 0px 8px 60px -5px purple;
   opacity: 0.8;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 header {
+    margin: 0;
+  }
+}
 .findoutmore-1 .navigation {
   width: 80%;
   margin: 0 auto;
@@ -555,6 +666,12 @@ footer h3 {
   align-items: center;
   padding: 30px 10%;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .navigation {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .findoutmore-1 .navigation .logo {
   width: 25rem;
   cursor: pointer;
@@ -562,6 +679,12 @@ footer h3 {
 .findoutmore-1 .navigation li {
   display: inline-block;
   padding: 0 20px;
+}
+@media (max-width: 700px) {
+  .findoutmore-1 .navigation li {
+    padding: 5px 15px;
+    margin: 10px 0;
+  }
 }
 .findoutmore-1 .navigation li a {
   transition: all 0.3s ease 0s;
@@ -615,6 +738,12 @@ footer h3 {
   width: 30%;
   height: 55%;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .sleeping-phone .section-phone {
+    width: 50%;
+    margin-top: 150px;
+  }
+}
 .findoutmore-1 .sleeping-phone .section-phone .worlds-best {
   color: white;
   text-align: center;
@@ -653,6 +782,11 @@ footer h3 {
   background: white;
   padding: 0;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .page-content {
+    flex-direction: column;
+  }
+}
 .findoutmore-1 .page-content .about-sleep {
   width: 50%;
   display: flex;
@@ -662,11 +796,21 @@ footer h3 {
   margin: 0;
   opacity: 0.6;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .page-content .about-sleep {
+    width: 100%;
+  }
+}
 .findoutmore-1 .page-content .about-sleep h2 {
   color: black;
   font-size: 5em;
   padding: 20px;
   color: #9600f5;
+}
+@media (max-width: 700px) {
+  .findoutmore-1 .page-content .about-sleep h2 {
+    font-size: 4em;
+  }
 }
 .findoutmore-1 .page-content .about-sleep p {
   font-size: 3em;
@@ -674,8 +818,18 @@ footer h3 {
   padding: 30px;
   text-align: justify;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .page-content .about-sleep p {
+    font-size: 1.9em;
+  }
+}
 .findoutmore-1 .page-content .about-image {
   width: 50%;
+}
+@media (max-width: 700px) {
+  .findoutmore-1 .page-content .about-image {
+    width: 100%;
+  }
 }
 .findoutmore-1 .page-content .about-image img {
   width: 100%;
@@ -705,10 +859,22 @@ footer h3 {
   color: black;
   margin-bottom: 20px;
 }
+@media (max-width: 700px) {
+  .findoutmore-1 .have-good-night {
+    margin-top: 40px;
+    color: limegreen;
+  }
+}
 .findoutmore-1 .sleep-more {
   font-size: 2em;
   text-align: center;
   color: #9600f5;
+}
+@media (max-width: 700px) {
+  .findoutmore-1 .sleep-more {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 .findoutmore-1 footer {
   display: flex;
@@ -720,6 +886,12 @@ footer h3 {
   padding: 20px;
   box-shadow: 10px -30px 60px -35px purple;
   line-height: 2em;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .findoutmore-1 footer {
+    margin: 0;
+  }
 }
 .findoutmore-1 footer a:hover {
   color: #9600f5;
@@ -744,6 +916,11 @@ footer h3 {
   text-align: center;
   margin: 30px auto;
   margin-top: 200px;
+}
+@media (max-width: 700px) {
+  .header {
+    margin-top: 300px;
+  }
 }
 .version-header {
   display: flex;
@@ -793,9 +970,19 @@ li a {
 .bugreport .emailinput {
   width: 15%;
 }
+@media (max-width: 700px) {
+  .bugreport .emailinput {
+    width: 50%;
+  }
+}
 .bugreport .bugdescription {
   width: 20%;
   padding: 7.5rem 15%;
+}
+@media (max-width: 700px) {
+  .bugreport .bugdescription {
+    width: 50%;
+  }
 }
 .bugreport .submitbtn {
   display: inline-block;
@@ -824,13 +1011,30 @@ li a {
   width: 43%;
   margin: 0 auto;
 }
+@media (max-width: 700px) {
+  .upcoming {
+    width: 70%;
+  }
+}
 .upcoming h2 {
   font-size: 3.5rem;
   background-color: #4c0099;
 }
+@media (max-width: 700px) {
+  .upcoming h2 {
+    font-size: 3em;
+  }
+}
 .upcoming p {
   font-size: 2rem;
   background-color: #4c0099;
+}
+@media (max-width: 700px) {
+  .upcoming p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 10px;
+  }
 }
 .features {
   display: flex;
@@ -838,6 +1042,12 @@ li a {
   width: 50%;
   margin: 0 auto;
   margin-top: 30px;
+}
+@media (max-width: 700px) {
+  .features {
+    width: 80%;
+    margin-top: 50px;
+  }
 }
 .features p {
   margin: 7px 0;
@@ -864,6 +1074,11 @@ footer {
   background: black;
   box-shadow: 10px -30px 60px -35px purple;
   margin-top: 175px;
+}
+@media (max-width: 700px) {
+  footer {
+    margin: 0;
+  }
 }
 footer a:hover {
   color: #9600f5;

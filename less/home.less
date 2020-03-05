@@ -12,6 +12,9 @@ header {
     background: black;
     box-shadow: 0px 8px 60px -5px purple;
     opacity: 0.8;
+    @media @tablet { // tablet media query header MEDIA
+        margin: 0;
+    }
 }
 .navigation{ // Nav at 80%
     width: 80%;
@@ -20,6 +23,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    @media @tablet { //tablet media query nav MEDIA 
+        width: 100%;
+        flex-direction: column;
+    }
     .logo{
         width: 25rem;
         cursor: pointer;
@@ -27,6 +34,11 @@ header {
     li{
         display: inline-block;
         padding: 0 20px;
+        @media @tablet { // tablet media query li elements MEDIA
+            padding: 5px 15px;
+            margin: 10px 0;
+           
+        }
         a{
             transition: all 0.3s ease 0s; //this is for animation hover
             font-size: 1.5em;
@@ -81,6 +93,11 @@ a{
         width: 30%;
         height: 55%;
         border-radius: 100%;
+        @media @tablet { // TABLET MEDIA QUERY 
+            border-radius: 0;
+            width: 80%;
+            height: auto;
+        }
     
         .better-sleep {
             color: white;
@@ -144,6 +161,9 @@ a{
     margin: 0 auto;
     background: black;
     padding: 0;
+    @media @tablet { // TABLET MID SECTION MEDIA QUERY
+        flex-direction: column;
+    }
    .about-sleep { // Content info
         width: 50%;
         display: flex;
@@ -152,22 +172,34 @@ a{
         align-items: center;
         margin: 0;
         opacity: 0.6;
+        @media @tablet { // TABLET MEDIA FOR CONTENT NEXT TO IMAGES
+            width: 100%;
+        }
         h2 {
             color: black;
             font-size: 4em;
             padding: 20px;
             color: rgba(150,0,245,1);
+            @media @tablet { // TABLET MEDIA FONT SIZE
+                font-size: 3em;
+            }
         }
        p {
            font-size: 2em;
            color: white;
            padding: 30px;
            text-align: justify;
+           @media @tablet { // TABLET MEDIA FONT SIZE
+            font-size: 1.9em;
+            }
           
        }
    }
    .about-image { // images next to content info
        width: 50%;
+       @media @tablet { // TABLET MEDIA IMAGE SIZE 100%
+        width: 100%;
+        }
        img {
            width: 100%;
        }
@@ -183,12 +215,20 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     h2 {
         width: 100%;
         margin: 0;
         text-align: right;
         font-size: 4em;
         color: yellowgreen;
+        @media @tablet { // TABLET MEDIA CENTER TEXT ABOVE APP ICONS 
+            font-size: 3em;
+            position: absolute;
+            top: 80px;
+            width: 50%;
+            text-align: center;
+        }
     }
    }
 }
@@ -205,6 +245,7 @@ footer{ // footer section
     padding: 20px;
     box-shadow: 10px -30px 60px -35px purple;
     line-height: 2em;
+    margin: 0;
     a:hover{
         color: @lightpurple;
         transition: all 0.3s ease 0s;
